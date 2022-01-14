@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	line-height: 1.5;
+	min-height: 100vh;
+	background-color: #f4f5f7;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+    z-index: 3;
+}
+
+
+
+
+details {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	margin-top: 2rem;
+	color: #6b7280;
+	display: flex;
+	flex-direction: column;
+    
+
+	div {
+		background-color: #1e1e27;
+		box-shadow: 0 5px 10px rgba(#000, 0.15);
+		padding: 1.25rem;
+		border-radius: 8px;
+		position: absolute;
+		max-height: calc(100vh - 100px);
+		width: 400px;
+		max-width: calc(100vw - 2rem);
+		bottom: calc(100% + 1rem);
+		right: 0;
+		overflow: auto;
+		transform-origin: 100% 100%;
+		color: #95a3b9;
+        
+	}
+
+
+
+}
+
+summary {
+	display: inline-flex;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	padding: 0.75em 3em .75em 1.25em;
+	border-radius: 99em;
+	color: #fff;
+	background-color: #185adb;
+	box-shadow: 0 5px 15px rgba(#000, 0.1);
+	list-style: none;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.15s ease;
+	position: relative;
+    transition: width 1s, height 1s;
+	&::-webkit-details-marker {
+		display: none;
+	}
+
+
+
+
+
+}
+
+
