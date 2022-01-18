@@ -10,31 +10,52 @@ accessToken: 'pk.eyJ1IjoibWlrZWJvc3MwOSIsImEiOiJja3k5MnY3ZTcwMmRnMm5venVoNGV3eWp
 }).addTo(map);
 
 
+/* 
 
-//user1 Maria
 var circle = L.circle([45.4991, 9.1328], {
 color: 'red',
 fillColor: '#f03',
 fillOpacity: 0.5,
-radius: 400
+radius: 900
 }).addTo(map);
 
-circle.bindPopup("<b>Maria -60€</b><br>3422133228.");
-
-//Moris
-var marker1 = L.marker([45.4956,9.1170]).addTo(map);
-marker1.bindPopup("<b>Moris -50€</b><br>3980982335").openPopup();
+circle.bindPopup("<b>Vendor2</b><br>90886756.");
+ */
 
 
-//Brasile
-/* var marker2 = L.marker([45.51473,9.07923]).addTo(map);
-marker2.bindPopup("<b>Bra -50€</b><br>3332190528").openPopup(); */
 
-//Loris
-var marker3 = L.marker([45.49405,9.14248]).addTo(map);
-marker3.bindPopup("<b>Lori -50€</b><br>3468548605").openPopup();
+var polygon = L.polygon([
+    [45.5119, 9.0850],
+    [45.5336, 9.0690],
+    [45.5285, 9.0867],
+    [45.5192, 9.1431],
+    [45.4928, 9.1456],
+    [45.4851, 9.1303],
+    [45.4903, 9.1008]
+]).addTo(map);
+
+polygon.bindPopup("We deliver in this area");
 
 
-//Ariana
-var marker4 = L.marker([45.52486,9.20690]).addTo(map);
-marker4.bindPopup("<b>Ariana -50€</b><br>3534276639").openPopup();
+var marker1 = L.marker([45.49534,9.12429]).addTo(map);
+marker1.bindPopup("<b>Carrefour</b><br>7h-21:30").openPopup();
+
+
+var marker2 = L.marker([45.50325,9.12718]).addTo(map);
+marker2.bindPopup("<b>Conad</b><br>8h-19:00").openPopup();
+
+
+var marker3 = L.marker([45.4968,9.1132]).addTo(map);
+marker3.bindPopup("<b>Coop</b><br>8:30-19:00").openPopup();
+
+
+
+var marker4 = L.marker([45.50219,9.11467]).addTo(map);
+marker4.bindPopup("<b>Lidl</b><br>8:00-20:00").openPopup();
+
+
+var marker5 = L.marker([45.50030,9.13083]).addTo(map);
+marker5.bindPopup("<b>Burger king</b><br>11:00-21:00").openPopup();
+
+var marker6 = L.marker([45.49601,9.13903]).addTo(map);
+marker6.bindPopup("<b>Mcdonalds</b><br>8:00-23:30").openPopup();
