@@ -1,0 +1,54 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 340px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+
+  .ingredient{
+    background-color: rgb(251, 250, 252);
+    width: auto;
+  }
+  
+  .price {
+    color: rgb(248, 10, 42);
+    font-size: 30px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .p{
+        margin: 0px 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(243, 159, 50);;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .card button:hover {
+    opacity: 0.9;
+  }
+
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+  }
