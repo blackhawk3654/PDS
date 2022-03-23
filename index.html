@@ -28,8 +28,9 @@
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
+    
     <link href="assets/css/theme.css" rel="stylesheet" />
-
+    <link href="assets/css/carous.css" rel="stylesheet" />
     <!--    try number 1-->
     <link href="assets/css/hot.css" rel="stylesheet" />
 
@@ -62,8 +63,6 @@
               <li class="nav-item px-2"><a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a></li>
               <li class="nav-item px-2"><a class="nav-link fw-bold" href="#howitworks">How it works</a></li>
               <li class="nav-item px-2"><a class="nav-link fw-bold" href="#products">Products </a></li>
-              <li class="nav-item px-2"><a class="nav-link fw-bold" href="#services">Services</a></li>
-              <li class="nav-item px-2"><a class="nav-link fw-bold" href="#faqs">FAQs </a></li>
               <li class="nav-item px-2"><a class="nav-link fw-bold" href="#maparea">Map </a></li>
             </ul>
           </div>
@@ -246,25 +245,42 @@
               <div class="tab-pane fade" id="cars" role="tabpanel" aria-labelledby="cars-tab">
                 <div class="row gx-3">
                   <div class="col-sm-6 col-md-4 mb-3 h-100">
-                    <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car1.png" alt="..." /><a class="stretched-link" href="#!"></a></div>
+                    <!-- ===================slide show=========================-->
+                    <div class="slideshow-container">
+                           <div class="mySlides fade">
+                             <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car1.png"/></div>
+                             <div class="text">1 / 6</div>
+                           </div>
+                           <div class="mySlides fade">
+                             <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car2.png"/></div>
+                             <div class="text">2 / 6</div>
+                           </div>
+                           <div class="mySlides fade">
+                             <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car3.png" /></div>
+                             <div class="text">3 / 6</div>
+                           </div>
+                            <div class="mySlides fade">
+                              <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car4.png" /></div>
+                              <div class="text">4 / 6</div>
+                            </div>
+                            <div class="mySlides fade">
+                             <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car5.png" /></div>
+                             <div class="text">5 / 6</div>
+                            </div>
+                           <div class="mySlides fade">
+                            <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car6.png" /></div>
+                            <div class="text">6 / 6</div>
+                          </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                   </div>
-                  <div class="col-sm-6 col-md-4 mb-3 h-100">
-                    <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car2.png" alt="..." /><a class="stretched-link" href="#!"></a></div>
-                  </div>
-                  <div class="col-sm-6 col-md-4 mb-3 h-100">
-                    <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car3.png" alt="..." /><a class="stretched-link" href="#!"></a></div>
-                  </div>
-                  <div class="col-sm-6 col-md-4 mb-3 h-100">
-                    <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car4.png" alt="..." /><a class="stretched-link" href="#!"></a></div>
-                  </div>
-                  <div class="col-sm-6 col-md-4 mb-3 h-100">
-                    <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car5.png" alt="..." /><a class="stretched-link" href="#!"></a></div>
-                  </div>
-                  <div class="col-sm-6 col-md-4 mb-3 h-100">
-                    <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/car6.png" alt="..." /><a class="stretched-link" href="#!"></a></div>
-                  </div>
+
+                  <!-- ================finish of the slide shwo there is also a scritp down============================-->
+
                 </div>
               </div>
+
               <div class="tab-pane fade" id="nav-phone" role="tabpanel" aria-labelledby="nav-phone-tab">
                 <div class="row gx-3">
                   <div class="col-sm-6 col-md-4 mb-3 h-100">
@@ -286,6 +302,7 @@
                   <div class="col-sm-6 col-md-4 mb-3 h-100">
                     <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/gopro7silver1.png" alt="..." /><a class="stretched-link" href="#!"></a></div>
                   </div>
+
                   <div class="col-sm-6 col-md-4 mb-3 h-100">
                     <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/camera-4.png" alt="..." /><a class="stretched-link" href="#!"></a></div>
                   </div>
@@ -295,12 +312,37 @@
                 </div>
               </div>
 
-
-
-
                 <!-- ============================================-->
- 
-      <!-- ==========================      MASSAGE AREA          ==================-->
+                <script>
+                  var slideIndex = 1;
+                  showSlides(slideIndex);
+                  
+                  function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+                  
+                  function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                  }
+                  
+                  function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                  }
+                  </script>
+
+      <!-- ==========================      Vendor AREA          ==================-->
 
               <div class="tab-pane fade" id="nav-massage" role="tabpanel" aria-labelledby="nav-massage-tab">
                 <div class="row gx-3">
@@ -335,12 +377,6 @@
                     </div>
                   </div>
                 </div>
-
-
-
-
-
-
                 </div>
               </div>
 
@@ -395,82 +431,6 @@
 
 
       <!-- ============================================-->
-      <!-- Services begin ============================-->
-<!--       <section class="bg-light py-5" id="services">
-
-        <div class="container">
-          <div class="row">
-            <h1 class="text-center lh-sm mb-5 fs-lg-6 fs-xxl-7">Our Services</h1>
-            <div class="col-12">
-              <div class="card mb-3 hover-top-shadow rounded-3 py-3 bg-soft-primary">
-                <div class="row g-0 flex-center">
-                  <div class="col-md-5 col-lg-4 text-center order-0"><img class="text-center w-100" src="assets/img/gallery/services-shoe-blue.png" alt="..." /></div>
-                  <div class="col-md-7 col-lg-8">
-                    <div class="card-body ps-5 p-lg-8">
-                      <h2 class="card-title mb-4 text-primary">Identify your product</h2>
-                      <p class="card-text mb-4 fs-1 pe-xxl-8">Invest on your commercial product photography on a visual story created by our creative team. Each click at the most reasonable price going to pay you more.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-3 hover-top-shadow rounded-3 py-3 bg-soft-success">
-                <div class="row g-0 flex-center">
-                  <div class="card-body ps-5 p-lg-8">
-                    <h2 class="card-title mb-4 text-success">Map Products</h2> 
-                  </div>
-                  <div class="col-md-5 col-lg-4 text-center order-lg-1"></div>
-                  <img class="text-center w-100" src="assets/img/gallery/diagram.png" alt="..." />
-                  <div class="col-md-7 col-lg-8">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section> -->
-      <!-- Services close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-<!--       <section id="faqs">
-
-        <div class="container">
-          <div class="row">
-            <h1 class="text-center lh-sm mb-5 fs-lg-6 fs-xxl-7">FAQ</h1>
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body px-5 pb-0">
-                  <div class="row gx-8">
-                    <div class="col-lg-6">
-                      <h3 class="mb-3 text-success">What are the delivery options?</h3>
-                      <p class="mb-5">Deliver your products by using the labeling with the help of any courier service or just drop it at your door step at Milano and other areas.</p>
-                      <h3 class="mb-3 text-warning">Will my products be returned?</h3>
-                      <p class="mb-5">Only if the product contains an original defect that was not caused by the client and you should maintain the receipt that prove you bought the prodcut from PDS.</p>
-                    </div>
-                    <div class="col-lg-6">
-                      <h3 class="mb-3 text-warning">Can I provide references?</h3>
-                      <p class="mb-5">Absolutely! If clients provide any sort of refernces, that is highly appreciated by our team.</p>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section> -->
-      <!-- <section> close  FAQ ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
       <!-- Map begin ============================-->
 
       <section id="maparea" class="py-0">
@@ -494,18 +454,6 @@
       <style>
         #map { height: 800px; width: 1200px;}
       </style>
-
-
-      <script>
- 
-
-
-
-
-      </script>
-
-
-      
 
 
       
