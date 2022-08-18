@@ -22,9 +22,16 @@ radius: 900
 circle.bindPopup("<b>Vendor2</b><br>90886756.");
  */
 
-
-
 var polygon = L.polygon([
+[45.5288,9.0396],
+[45.4228,9.0643],
+[45.3785,9.1655],
+[45.4180,9.2701],
+[45.4908,9.2934],
+[45.5593,9.2089]
+]).addTo(map);
+
+/* var polygon = L.polygon([
     [45.5119, 9.0850],
     [45.5336, 9.0690],
     [45.5285, 9.0867],
@@ -32,7 +39,7 @@ var polygon = L.polygon([
     [45.4928, 9.1456],
     [45.4851, 9.1303],
     [45.4903, 9.1008]
-]).addTo(map);
+]).addTo(map); */
 
 polygon.bindPopup("We deliver in this area");
 
