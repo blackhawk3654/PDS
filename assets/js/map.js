@@ -43,7 +43,7 @@ var polygon = L.polygon([
 
 polygon.bindPopup("We deliver in this area");
 
-
+/* 
 var marker1 = L.marker([45.49534,9.12429]).addTo(map);
 marker1.bindPopup("<b>Carrefour</b><br>7h-21:30").openPopup();
 
@@ -66,3 +66,4 @@ marker5.bindPopup("<b>Burger king</b><br>11:00-21:00").openPopup();
 
 var marker6 = L.marker([45.49601,9.13903]).addTo(map);
 marker6.bindPopup("<b>Mcdonalds</b><br>8:00-23:30").openPopup();
+ */
