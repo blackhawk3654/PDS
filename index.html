@@ -16,7 +16,7 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    
+
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
@@ -307,9 +307,29 @@
                         <div class="verified-avatar-icon-green">✓</div> 
                     </div>
                   </div>
+
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="myboxx">
+                      <div class="card card-span h-100 text-white"><img id="Mini" src="assets/img/gallery/car4.png" /></div>
+
+                    </div>
+
+                  
+                     
+                  </div>
+
+
+
+
                   <!-- ================finish of the slide shwo there is also a scritp down============================-->
                 </div>
               </div>
+
+<script>
+
+</script>
+
+
 
 
       <!-- ==========================      Vendor AREA-Vendors          ==================-->
@@ -359,14 +379,22 @@
 
         <script>
             let images = ['assets/img/gallery/lady-1.jpeg', 'assets/img/gallery/lady-2.jpeg', 'assets/img/gallery/lady-3.jpeg'];
+            let carss = ['assets/img/gallery/mini/mini1.jpg', 'assets/img/gallery/mini/mini2.jpg', 'assets/img/gallery/mini/mini3.jpg', 'assets/img/gallery/mini/mini4.jpg', 'assets/img/gallery/mini/mini5.jpg'];
             let currentImageIndex = 0;
+            let currentImageIndexx = 0;
 
             function slideShow() {
               document.getElementById('vendor3').src = images[currentImageIndex];
               currentImageIndex = (currentImageIndex + 1) % images.length;
             }
 
+            function slideShowcar() {
+              document.getElementById('Mini').src = carss[currentImageIndexx];
+              currentImageIndexx = (currentImageIndexx + 1) % carss.length;
+            }
+
             setInterval(slideShow, 2000); // run every 1 second
+            setInterval(slideShowcar, 3000); // run every 1 second
 
 
         </script>

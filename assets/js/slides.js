@@ -24,3 +24,40 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
 }
+
+/* 
+const cards = document.querySelectorAll('.slideshow-container');
+cards.forEach(card => {
+    const prevButton = card.querySelector('.prev');
+    const nextButton = card.querySelector('.next');
+    const images = card.querySelectorAll('.card');
+    let currentImageIndex = 0;
+
+    images[currentImageIndex].classList.add('active');
+    prevButton.style.display = 'none';
+
+    nextButton.addEventListener('click', () => {
+        images[currentImageIndex].classList.remove('active');
+        currentImageIndex++;
+        if (currentImageIndex === images.length - 1) {
+            nextButton.style.display = 'none';
+        }
+        if (currentImageIndex > 0) {
+            prevButton.style.display = 'block';
+        }
+        images[currentImageIndex].classList.add('active');
+    });
+
+    prevButton.addEventListener('click', () => {
+        images[currentImageIndex].classList.remove('active');
+        currentImageIndex--;
+        if (currentImageIndex === 0) {
+            prevButton.style.display = 'none';
+        }
+        if (currentImageIndex < images.length - 1) {
+            nextButton.style.display = 'block';
+        }
+        images[currentImageIndex].classList.add('active');
+    });
+});
+ */
