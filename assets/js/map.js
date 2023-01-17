@@ -12,17 +12,21 @@ accessToken: 'pk.eyJ1IjoibWlrZWJvc3MwOSIsImEiOiJja3k5MnY3ZTcwMmRnMm5venVoNGV3eWp
 
 /* 
 
-var circle = L.circle([45.4991, 9.1328], {
+var circle = L.circle([45.48756, 9.18524], {
 color: 'red',
 fillColor: '#f03',
 fillOpacity: 0.5,
-radius: 900
+radius: 500
 }).addTo(map);
 
-circle.bindPopup("<b>Vendor2</b><br>90886756.");
+circle.bindPopup("<b>Gaia</b><br>3939319999.");
  */
+var marker1 = L.marker([45.48756,9.18524]).addTo(map);
+marker1.bindPopup("<b>Gaia</b><br>3939319999").openPopup();
 
-var polygon = L.polygon([
+//delivery
+
+ var polygon = L.polygon([
 [45.5288,9.0396],
 [45.4228,9.0643],
 [45.3785,9.1655],
@@ -30,7 +34,7 @@ var polygon = L.polygon([
 [45.4908,9.2934],
 [45.5593,9.2089]
 ]).addTo(map);
-
+ 
 /* var polygon = L.polygon([
     [45.5119, 9.0850],
     [45.5336, 9.0690],
@@ -41,7 +45,7 @@ var polygon = L.polygon([
     [45.4903, 9.1008]
 ]).addTo(map); */
 
-polygon.bindPopup("We deliver in this area");
+//polygon.bindPopup("We deliver in this area");
 
 /* 
 var marker1 = L.marker([45.49534,9.12429]).addTo(map);

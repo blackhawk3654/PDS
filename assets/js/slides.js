@@ -27,10 +27,12 @@ function showSlides(n) {
 
 
 
-let slideIndex = [1,1];
-let slideId = ["mySlides", "mySlides2"]
+let slideIndex = [1,1,1];
+let slideId = ["mySlides", "mySlides2","mySlides3"]
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2);
+
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);

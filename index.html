@@ -167,7 +167,13 @@
 
       </section>
       <!-- <section> close ============================-->
-
+        <div id="visitor-count"></div>
+        <style>
+      #visitor-count {
+        text-align: center;
+        font-size: 30px;
+          }
+          </style>
       <!-- ============================================-->
 
       <section id="products">
@@ -179,7 +185,7 @@
             <div class="col-12">
               <nav></nav>
               <div class="nav nav-tabs clickr-tabs mb-6 justify-content-center" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-food-tab" data-bs-toggle="tab" data-bs-target="#nav-food" type="button" role="tab" aria-controls="nav-food" aria-selected="true">Food</button>
+                <!-- <button class="nav-link active" id="nav-food-tab" data-bs-toggle="tab" data-bs-target="#nav-food" type="button" role="tab" aria-controls="nav-food" aria-selected="true">Food</button> -->
                <button class="nav-link" id="nav-shoes-tab" data-bs-toggle="tab" data-bs-target="#nav-shoes" type="button" role="tab" aria-controls="nav-shoes" aria-selected="false">Shoes</button>
       <!--           <button class="nav-link" id="nav-watches-tab" data-bs-toggle="tab" data-bs-target="#nav-watches" type="button" role="tab" aria-controls="nav-watches" aria-selected="false">Watches</button> -->
                 <button class="nav-link" id="cars-tab" data-bs-toggle="tab" data-bs-target="#cars" type="button" role="tab" aria-controls="cars" aria-selected="false">Cars</button>
@@ -189,7 +195,7 @@
               </div>
             </div>
             <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-food" role="tabpanel" aria-labelledby="nav-food-tab">
+<!--               <div class="tab-pane fade show active" id="nav-food" role="tabpanel" aria-labelledby="nav-food-tab">
                 <div class="row gx-3">
                   <div class="col-sm-6 col-md-4 mb-3 h-100">
                     <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/pizzaaa.jpeg" alt="..." /><a class="stretched-link" href="Pages/pizza-kebab.html"></a></div>
@@ -199,14 +205,14 @@
                   </div>
                   <div class="col-sm-6 col-md-4 mb-3 h-100">
                     <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/carrefour_logo.png" alt="..." /><a class="stretched-link" href="#!"></a></div>
-                  </div>
-<!--                   <div class="col-sm-6 col-md-4 mb-3 h-100">
+                  </div> 
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
                     <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/coop.png" alt="..." /><a class="stretched-link" href="#!"></a></div>
-                  </div> -->
+                  </div> 
 
                 </div>
               </div>
-
+ -->
 <!--          =============================Shoes============================= -->
             
               <div class="tab-pane fade" id="nav-shoes" role="tabpanel" aria-labelledby="nav-shoes-tab">
@@ -357,50 +363,40 @@
 
               <div class="tab-pane fade" id="nav-massage" role="tabpanel" aria-labelledby="nav-massage-tab">
                 <div class="row gx-3">
-                  <div class="col-sm-6 col-md-4 mb-3 h-100">
-                      <div class="myboxx">
-                          <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/lady-1.jpeg" /></div>
-                        <div class="verified-avatar-icon">✓</div>
-                        <div class="mytextt">
-                          <h3>Vendor3</h3>
-                          <h3>*****</h3>
-                      </div>
-                    </div>
-                  </div>
 
                   <div class="col-sm-6 col-md-4 mb-3 h-100">
-                      <div class="myboxx">
+
+                    <div class="slideshow-container">
+                      <div class="mySlides3 fade myboxx">
+                        <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/lady-1.jpeg"/></div>
+                        
+                      </div>
+                      <div class="mySlides3 fade myboxx">
                         <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/lady-2.jpeg" /></div>
-                        <div class="verified-avatar-icon">✓</div>
-                        <div class="mytextt">
-                          <h3>Vendor1</h3>
-                          <h3>*****</h3>
+                       
                       </div>
+                       <div class="mySlides3 fade myboxx">
+                         <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/lady-3.jpeg" /></div>
+                       </div>
+
+
+                      <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                      <div class="verified-avatar-icon">✓</div> 
+                      
                     </div>
                   </div>
 
                   <div class="col-sm-6 col-md-4 mb-3 h-100">
-                    <div class="myboxx">
-                      <div class="card card-span h-100 text-white"><img id="vendor3"  src="assets/img/gallery/lady-3.jpeg" /></div>
-                      <div class="verified-avatar-icon-green">✓</div>
-                      <div class="mytextt">
-                        <h3>Vendor2</h3>
-                        <h3>***</h3>
+                      <div class="myboxx">
+                        <div class="card card-span h-100 text-white"><img class="rounded-3 h-100" src="assets/img/gallery/lady-4.jpg"/></div>
+                        <div class="verified-avatar-icon-green">✓</div>
+                        <div class="mytextt">
+                          <h3>Gaia</h3>
+                          <h3>3939319999</h3>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 mb-3 h-100">
-                  <div class="myboxx">
-                    <div class="card card-span h-100 text-white"><img id="vendor4"  src="assets/img/gallery/lady-4.jpg" /></div>
-                    <div class="verified-avatar-icon-green">✓</div>
-                    <div class="mytextt">
-                      <h3>Gaia</h3>
-                      <h3>3939319999</h3>
-                  </div>
-                </div>
-              </div>
-
 
                 </div>
               </div>
@@ -412,20 +408,17 @@
 
 
         <script>
-            let images = ['assets/img/gallery/lady-1.jpeg', 'assets/img/gallery/lady-2.jpeg', 'assets/img/gallery/lady-3.jpeg'];
-       
-            let currentImageIndex = 0;
 
-            function slideShow() {
-              document.getElementById('vendor34').src = images[currentImageIndex];
-              currentImageIndex = (currentImageIndex + 1) % images.length;
-            }
-
-            setInterval(slideShow, 2000); // run every 1 second
-
-
+                var count = 0;
+                function visitorCount() {
+                  count += 1;
+                  document.getElementById("visitor-count").innerHTML = "at this time you are number: " + count;
+                }
+                visitorCount();
 
         </script>
+
+       
 
 <!-- ==================try for ladies==========================-->
 <style>
