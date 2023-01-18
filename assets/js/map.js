@@ -22,7 +22,7 @@ radius: 500
 circle.bindPopup("<b>Gaia</b><br>3939319999.");
  */
 var marker1 = L.marker([45.48756,9.18524]).addTo(map);
-marker1.bindPopup("<b>Gaia</b><br>3939319999").openPopup();
+marker1.bindPopup("<b>Shanghai</b><br>3939319999").openPopup();
 
 //delivery
 
