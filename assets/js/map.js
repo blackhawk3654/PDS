@@ -55,7 +55,7 @@ accessToken: 'pk.eyJ1IjoibWlrZWJvc3MwOSIsImEiOiJja3k5MnY3ZTcwMmRnMm5venVoNGV3eWp
       {
         "lat": 45.49670,
         "lng": 9.11008,
-        "name": "Shoes",
+        "name": "Scarpe",
         "fillcolor": '#f50692'
       }
     ]
